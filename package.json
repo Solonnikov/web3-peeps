@@ -1,0 +1,32 @@
+{
+  "name": "web3-peeps",
+  "version": "1.0.0",
+  "description": "Web3 bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "set NODE_ENV=development&&nodemon --watch",
+    "start:prod": "set NODE_ENV=production&&nodemon --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yaroslav Solonnikov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.3.0",
+    "express": "^4.18.2",
+    "ipfs-core": "^0.18.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "truncate-eth-address": "^1.0.2",
+    "twitter-api-v2": "^1.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
