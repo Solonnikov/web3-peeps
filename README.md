@@ -21,6 +21,7 @@ This project was created for web3 community, please refer to the [LICENCE](LICEN
 - Create .env file and set your variables (example in .env.example)
   - DISCORD_BOT_TOKEN=<YOUR_DISCORD_BOT_TOKEN>
   - DISCORD_SERVER_ID=<YOUR_DISCORD_BOT_ID>
+  - Add same variable to your [Heroku config vars](https://dashboard.heroku.com/apps/web3-peeps/settings)
 - Create your custom bot at [Discord Developer Portal](https://discord.com/developers) and give all necessary permissions. Paste PERMISSIONS INTEGER value to the (config.js) file
 - Add collection data, such as: collection slug, supply and channels you want to add
 - Give a name for your endpoint: Default is 'project-stats-discord'
