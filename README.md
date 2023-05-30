@@ -19,7 +19,7 @@ This project was created for web3 community, please refer to the [LICENCE](LICEN
 ## Usage
 - Create heroku app and deploy your server [Heroku](https://dashboard.heroku.com/)
 - Create account at [Cron Jobs](https://cron-job.org/en/)
-- Set your variables to (.env) file
+- Create .env file and set your variables (example in .env.example)
   - DISCORD_BOT_TOKEN=<YOUR_DISCORD_BOT_TOKEN>
   - DISCORD_SERVER_ID=<YOUR_DISCORD_BOT_ID>
 - Create your custom bot at [Discord Developer Portal](https://discord.com/developers) and give all necessary permissions. Past PERMISSIONS INTEGER value to the (config.js) file
