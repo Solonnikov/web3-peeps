@@ -7,7 +7,7 @@ This project was created for web3 community, please refer to the [LICENCE](LICEN
 - NFT collections stats Discord bot (Creates channels with NFT collection stats inside your Discord server).
 
 ### Software
-- [Visual Studio Code](https://code.visualstudio.com/))
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [NodeJs](https://nodejs.org/) (with the [Npm package manager](https://www.npmjs.com/))
 
 ### Services
