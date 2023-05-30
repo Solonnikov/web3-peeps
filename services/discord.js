@@ -5,7 +5,7 @@ const {config} = require('../config');
 const botToken = process.env.DISCORD_BOT_TOKEN;
 
 const client = new Client({
-    intents: [config.discordStatsBot.intents]
+    intents: [process.env.DISCORD_SERVER_INTENTS] // Get your specific value at https://discord.com/developers,
 });
 
 client.on("ready", async () => {

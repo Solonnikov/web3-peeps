@@ -1,7 +1,6 @@
 const config = {
     discordStatsBot: {
         serverId: process.env.DISCORD_SERVER_ID, // Set your specific Server id
-        intents: process.env.DISCORD_INTENTS, // Get your specific value at https://discord.com/developers,
         collectionSlug: 'octopeeps-kingdoms',
         collectionSupply: 4848,
         channels: [
