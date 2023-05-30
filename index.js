@@ -9,28 +9,25 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 const {discordBotLogin, addNftStatisticsChannels} = require('./services/discord');
+const {config} = require('./config');
 
 // Routes
 app.get('/', (req, res) => {
-    const title = 'Welcome to Web3 Peeps!';
+    const title = 'Welcome to Web3 Peeps Bot!';
     res.send(title);
 });
 
-app.post('/project-stats-discord', async (req, res) => {
+app.post(`/${config.discordStatsBot.apiUrl}`, async (req, res) => {
     try {
-        const channels = [
-            {name: 'Mint Price', data: '5 MATIC'},
-            {name: 'Minted', dataKey: 'total_supply', dataKey2: 'supply'},
-            {name: 'Floor Price', dataKey: 'floor_price', round: 3},
-            {name: 'Total Volume', dataKey: 'total_volume', round: 3},
-            {name: 'Total Sales', dataKey: 'total_sales'},
-            {name: 'Holders', dataKey: 'num_owners'}
-        ];
-        const serverId = "941860691395096666";
-        await addNftStatisticsChannels(serverId, 'octopeeps-kingdoms', 4848, channels);
+        await addNftStatisticsChannels(
+            config.discordStatsBot.serverId,
+            config.discordStatsBot.collectionSlug,
+            config.discordStatsBot.collectionSupply,
+            config.discordStatsBot.channels
+        );
         res.sendStatus(200);
     } catch (error) {
-        console.error('Failed to trigger project-stats-discord', error);
+        console.error('Failed to trigger project Stats to Discord', error);
         res.sendStatus(500);
     }
 });

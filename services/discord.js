@@ -1,12 +1,11 @@
 const {Client} = require("discord.js");
 require('dotenv').config();
 const {fetchCollectionMetadata} = require('./opensea');
-
-const botToken = process.env.BOT_TOKEN;
-const serverId = "941860691395096666";
+const {config} = require('../config');
+const botToken = process.env.DISCORD_BOT_TOKEN;
 
 const client = new Client({
-    intents: [8]
+    intents: [config.discordStatsBot.intents]
 });
 
 client.on("ready", async () => {
@@ -22,7 +21,6 @@ async function addNftStatisticsChannels(serverId, collectionSlug, supply, channe
     let composedData = data.collection.stats;
     composedData.supply = supply;
     composedData.floor_price = +data.collection.stats.floor_price;
-    console.log(composedData);
     return await updateDiscordChannel(serverId, channels, composedData)
 }
 
