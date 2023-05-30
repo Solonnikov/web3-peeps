@@ -34,13 +34,13 @@ async function updateDiscordChannel(serverId, channelConfigs, data) {
         let updatedChannelName;
         if (channelConfig.dataKey) {
             if (data[channelConfig.dataKey] && channelConfig.round) {
-                data[channelConfig.dataKey] = parseFloat(data[channelConfig.dataKey].toFixed(channelConfig.round));
+                data[channelConfig.dataKey] = `${parseFloat(data[channelConfig.dataKey].toFixed(channelConfig.round))} ETH`;
             }
 
             if (!data[channelConfig.dataKey2]) {
-                updatedChannelName = `${channelConfig.name}: ${+data[channelConfig.dataKey]}`;
+                updatedChannelName = `${channelConfig.name}: ${data[channelConfig.dataKey]}`;
             } else {
-                updatedChannelName = `${channelConfig.name}: ${+data[channelConfig.dataKey]}/${+data[channelConfig.dataKey2]}`;
+                updatedChannelName = `${channelConfig.name}: ${data[channelConfig.dataKey]}/${+data[channelConfig.dataKey2]}`;
             }
 
         } else {
