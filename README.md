@@ -31,13 +31,13 @@ This project was created for web3 community, please refer to the [LICENCE](LICEN
 ## Running the App
 To run the app locally, follow these steps:
 
-#Clone the repo to your local machine
+### Clone the repo to your local machine
 - git clone https://github.com/Solonnikov/web3-peeps.git
-#Install dependencies:
+### Install dependencies:
 `npm install`
-#Start the app in development mode. This command sets the environment to development and uses nodemon to watch for file changes:
+### Start the app in development mode. This command sets the environment to development and uses nodemon to watch for file changes:
 `npm run start:dev`
-#Alternatively, you can start the app in production mode using:
+### Alternatively, you can start the app in production mode using:
 `npm run start:prod`
-#Command for Heroku script run:
+### Command for Heroku script run:
 `npm run start`
