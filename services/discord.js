@@ -1,7 +1,7 @@
 const {Client} = require("discord.js");
+
 require('dotenv').config();
 const {fetchCollectionMetadata} = require('./opensea');
-const {config} = require('../config');
 const botToken = process.env.DISCORD_BOT_TOKEN;
 
 const client = new Client({
