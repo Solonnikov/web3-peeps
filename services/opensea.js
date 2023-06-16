@@ -5,6 +5,7 @@ async function fetchCollectionMetadata(collectionSlug) {
     const options = {
         method: 'GET',
         url: `https://api.opensea.io/api/v1/collection/${collectionSlug}`,
+        headers: {'X-API-KEY': process.env.OPENSEA_API_KEY}
     };
 
     try {
