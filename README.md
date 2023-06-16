@@ -15,6 +15,9 @@ This project was created for web3 community, please refer to the [LICENCE](LICEN
 - [Heroku](https://dashboard.heroku.com/) (For your Node js server hosting) 
 - [Cron Jobs](https://cron-job.org/en/) (For automated requests)
 
+## Prerequisites
+- OpenSea API key (Request yours from [OpenSea Developer](https://docs.opensea.io/reference/api-keys)
+
 ## Running the App
 To run the app locally, follow these steps:
 
@@ -32,14 +35,15 @@ To run the app locally, follow these steps:
 ## Usage
 - Create heroku app [Heroku](https://dashboard.heroku.com/)
 - Create account at [Cron Jobs](https://cron-job.org/en/)
+- Request your Opensea API Key [Opensea](https://docs.opensea.io/reference/api-keys)
 - Create .env file and set your variables (example in .env.example)
   - DISCORD_BOT_TOKEN=<YOUR_DISCORD_BOT_TOKEN>
   - DISCORD_SERVER_INTENTS=<YOUR_DISCORD_SERVER_INTENTS>
+  - OPENSEA_API_KEY=<YOUR_OPENSEA_API_KEY>
   - Add same variables to your [Heroku config vars](https://dashboard.heroku.com/apps/web3-peeps/settings)
 - Create your custom bot at [Discord Developer Portal](https://discord.com/developers) and give all necessary permissions. Paste PERMISSIONS INTEGER value to the (.env) file
 - Add collection data, such as: discord server id, collection slug, collection supply and channels you want to add
 - Give a name for your endpoint: Default is 'project-stats-discord'
 - Deploy your heroku application using this instructions: [Heroku Deploy](https://dashboard.heroku.com/apps/web3-peeps/deploy/heroku-git)
 - Set up Cron jobs task to trigger your endpoint with a needed interval [Cron Jobs](https://cron-job.org/en/)
-
 
