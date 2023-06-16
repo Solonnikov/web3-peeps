@@ -53,3 +53,16 @@ Follow the steps below to set up and use the WEB3PEEPS BOT:
 
 Please note that you may need to review and adjust the logic and order of the instructions to better fit your project's requirements.
 
+## Release Notes
+
+### Version 1.0.0 (Initial Release)
+
+- Added support for using the OpenSea API key to retrieve collection information.
+- Follow the steps below to incorporate the OpenSea API key:
+
+    1. Obtain your OpenSea API key from [OpenSea Developer](https://docs.opensea.io/reference/api-keys).
+    2. Update the `.env` file with the following environment variable:
+       ```
+       OPENSEA_API_KEY=<YOUR_OPENSEA_API_KEY>
+       ```
+    3. Save the changes and restart the application.
