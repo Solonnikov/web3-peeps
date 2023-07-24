@@ -2,7 +2,7 @@ const config = {
     discordStatsBot: {
         serverId: '941860691395096666', // Set your specific Server id
         collectionSlug: 'octopeeps-kingdoms',
-        collectionSupply: 4848,
+        collectionSupply: 1000,
         channels: [
             {name: 'Mint Price', data: '5 MATIC'},
             {name: 'Minted', dataKey: 'total_supply', dataKey2: 'supply'},
